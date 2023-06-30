@@ -70,6 +70,7 @@ session.bind_transceiver(
           if (pdu.command_status == 0) { // Successfully submitted
             // Message successfully sent
             console.log("message sent OK");
+            return; 
           } else {
             // Message failed to be sent
             console.log("message sending failed");
